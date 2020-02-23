@@ -47,6 +47,8 @@ if (isset($_POST['submit'])) {
 						while ($row = mysqli_fetch_assoc($searchresult1)){
 							session_start();
 							$_SESSION["id"] = $row['id'];
+							$onlytwo = '';
+							$_SESSION['onlytwo'] = $onlytwo;
 						};
 							header("Location:pupdate.php");
 					}

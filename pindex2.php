@@ -1,7 +1,8 @@
 <?php
 
+require "connection.php";
+
 if (isset($_POST["submit"])) {
-	require "connection.php";
 	$ppassword = mysqli_real_escape_string($conn, $_POST['ppassword']);
 	$pemail = mysqli_real_escape_string($conn, $_POST['pemail']);
 	$same = "SELECT `pemail`,`ppassword` FROM `professors` WHERE `pemail` = ?";

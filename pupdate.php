@@ -3,10 +3,13 @@ session_start();
 if (!isset($_SESSION['onlyone'])) {
     header("Location:psearch.php");
 };
+if (!isset($_SESSION['onlytwo'])) {
+    header("Location:psearch.php");
+};
 if (!isset($_SESSION["plogin"])) {
     header("Location:plogin.php?error=pnotloggedin");
 };
-
+unset($_SESSION['onlytwo']);
 echo "<h2>Student found, but no grades!</h2>"
 ?>
 
