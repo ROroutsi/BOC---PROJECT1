@@ -40,6 +40,6 @@ if (isset($_POST["submit"])) {
 	}
 }
 else{
-	header("Location:slogin.php")
+	header("Location:slogin.php");
 }
 ?>

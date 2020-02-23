@@ -39,7 +39,7 @@ if (isset($_POST["submit"])) {
 	}
 }
 else{
-	header("Location:plogin.php")
+	header("Location:plogin.php");
 }
 
 ?>

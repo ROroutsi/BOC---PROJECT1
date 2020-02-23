@@ -25,6 +25,6 @@ if (isset($_POST["submit"])) {
 	}
 }
 else{
-	header("Location:psearch.php")
+	header("Location:psearch.php");
 }	
 ?>

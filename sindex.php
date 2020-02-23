@@ -46,6 +46,6 @@ if (isset($_POST["submit"])) {
 	}	
 }
 else{
-	header("Location:ssignup.php")
+	header("Location:ssignup.php");
 }
 ?>
