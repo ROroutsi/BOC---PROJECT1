@@ -21,8 +21,8 @@ if (isset($_POST["submit"])) {
 				$pwordcheck = password_verify($ppassword, $row['ppassword']);
 				if ($pwordcheck == FALSE) {
 					header("Location:plogin.php?error=wrongpassword");
-					}
 					exit();
+					}
 				else {
 					if ($pemail !== $row['pemail']) {
 						header("Location:plogin.php?error=wrongemail");

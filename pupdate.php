@@ -26,10 +26,10 @@ echo "<h2>Student found, but no grades!</h2>"
         <div class="form">
             <h2>Assign grades:</h2>
             <form method="post" action="pupdateindex.php">
-            <input type="number" name="subjectone" placeholder="Subject One" required>
-            <input type="number" name="subjecttwo" placeholder="Subject Two" required>
-            <input type="number" name="subjectthree" placeholder="Subject Three" required>
-            <input type="number" name="subjectfour" placeholder="Subject Four" required>
+            <input type="number" name="subjectone" placeholder="Subject One" max="10" min="0" required>
+            <input type="number" name="subjecttwo" placeholder="Subject Two" max="10" min="0" required>
+            <input type="number" name="subjectthree" placeholder="Subject Three" max="10" min="0" required>
+            <input type="number" name="subjectfour" placeholder="Subject Four" max="10" min="0" required>
             <input type="submit" value="Assign" name="submit">
             </form>
         </div>
