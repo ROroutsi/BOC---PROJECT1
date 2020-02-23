@@ -32,5 +32,5 @@
 </html>
 
 <?php 
-echo '<h2><a href="slogin.php"> Log in </a> </h2>';
+echo '<h2><a href="slogin.php">Log in</a> or <a href="Start.php">Switch</a></h2>';
 ?>

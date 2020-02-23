@@ -43,4 +43,4 @@ if (isset($_GET['success'])) {
 </body>
 </html>
 
-<?php echo '<h2><a href="psignup.php"> Sign up </a> </h2>'; ?>
+<?php echo '<h2><a href="psignup.php">Sign up</a> or <a href="Start.php">Switch</a></h2>'; ?>

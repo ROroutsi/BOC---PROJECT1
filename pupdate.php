@@ -34,4 +34,4 @@ echo "<h2>Student found, but no grades!</h2>"
 </body>
 </html>
 
-<?php echo '<h2><a href="plogout.php"> Log out </a> </h2>'; ?>
+<?php echo '<h2><a href="plogout.php">Log out</a> or <a href="Start.php">Switch</a></h2>'; ?>

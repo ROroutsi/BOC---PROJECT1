@@ -41,6 +41,6 @@ if (isset($_GET['success'])) {
 
 <?php 
 if (isset($_SESSION["plogin"])) {
-    echo '<h2><a href="plogout.php"> Log out </a> </h2>';
+    echo '<h2><a href="plogout.php">Log out</a> or <a href="Start.php">Switch</a></h2>';
 };
 ?>
