@@ -1,4 +1,4 @@
-# BOC-PROJECT1
+# SoC - PROJECT1
 
 Professor and Student Signup/Login/Grades system.
 
