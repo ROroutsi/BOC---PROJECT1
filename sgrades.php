@@ -28,7 +28,10 @@ else{
                 $fourth = $row['subjectfour'];
                 $average = (($first+$second+$third+$fourth)/4);
         }
-    }  
+    }
+    else{
+        header("Location:slogin.php?error=nogrades");
+        } 
 }
 
 ?>
@@ -53,4 +56,4 @@ else{
 </body>
 </html>
 
-<?php echo '<h2><a href="slogout.php">Log out</a> or <a href="Start.php">Switch</a></h2>'; ?>
+<?php echo "<h2><a href='slogout.php'>Log out</a></h2>".' '."<h2><a href='Start.php'>Switch</a></h2>"; ?>

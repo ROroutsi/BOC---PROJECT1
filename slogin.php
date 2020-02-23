@@ -15,6 +15,8 @@ if (isset($_GET['success'])) {
         <p class="error">Wrong email, try again!</p>
     <?php } elseif ($_GET['error']=="snotloggedin") { ?>
         <p class="error">You are not logged in!</p>
+    <?php } elseif ($_GET['error']=="nogrades") { ?>
+        <p class="error">No grades yet, patience!</p>    
     <?php } elseif ($_GET['error']=="userdoesnotexist") { ?>
         <p class="error">User does not exist!</p>        
     <?php }; 

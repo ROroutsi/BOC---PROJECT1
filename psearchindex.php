@@ -84,4 +84,4 @@ echo '<h2><a href="psearch.php"> Search again! </a> </h2>';
 </body>
 </html>
 
-<?php echo '<h2><a href="plogout.php">Log out</a> or <a href="Start.php">Switch</a></h2>'; ?>
+<?php echo "<h2><a href='plogout.php'>Log out</a></h2>".' '."<h2><a href='Start.php'>Switch</a></h2>"; ?>
