@@ -15,8 +15,8 @@ if (isset($_POST['submit'])) {
 	$searchmysql = "SELECT grades.`subjectone`, grades.`subjecttwo`, grades.`subjectthree`, grades.`subjectfour` FROM `students` JOIN `grades` ON grades.`student_id` = students.`id`  WHERE `sname` LIKE CONCAT('%',?,'%') AND `slastname` LIKE CONCAT('%',?,'%');";
 	$stmt = mysqli_stmt_init($conn);
 	if (!mysqli_stmt_prepare($stmt,$searchmysql)) {
-	header("Location:psearch.php?error=sqlerror");
-	exit();
+		header("Location:psearch.php?error=sqlerror");
+		exit();
 	}
 	else{
 		mysqli_stmt_bind_param($stmt,"ss",$searchname,$searchlastname);

@@ -34,6 +34,7 @@ if (isset($_POST["submit"])) {
 					$stmt1 = mysqli_stmt_init($conn);
 					if (!mysqli_stmt_prepare($stmt1,$addmysql)) {
 						echo 'Sql error';
+						exit();
 					}
 					else{
 						mysqli_stmt_bind_param($stmt1,"ssss", $pname, $plastname, $phpassword, $pemail);

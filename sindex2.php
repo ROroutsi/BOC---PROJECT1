@@ -20,10 +20,12 @@ if (isset($_POST["submit"])) {
 				$pwordcheck = password_verify($spassword, $row['spassword']);
 				if ($pwordcheck == FALSE) {
 					header("Location:slogin.php?error=wrongpassword");
+					exit();
 					}
 				else {
 					if ($semail !== $row['semail']) {
 						header("Location:slogin.php?error=wrongemail");
+						exit();
 					}
 					else {
 						session_start();

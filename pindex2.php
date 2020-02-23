@@ -22,9 +22,11 @@ if (isset($_POST["submit"])) {
 				if ($pwordcheck == FALSE) {
 					header("Location:plogin.php?error=wrongpassword");
 					}
+					exit();
 				else {
 					if ($pemail !== $row['pemail']) {
 						header("Location:plogin.php?error=wrongemail");
+						exit();
 					}	
 					else {
 						session_start();
