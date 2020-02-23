@@ -4,11 +4,9 @@ Professor and Student Signup/Login/Grades system.
 
 **Begin with Start.php**
 
-p for professor and s for student.
-
 ## Process
 
-1. Connection + Require + Start
+1. project database + connection + require + Start
 
 2. psignup -> pindex -> plogin -> pindex2 -> psearch -> psearchindex -> pupdate -> pupdateindex
 
