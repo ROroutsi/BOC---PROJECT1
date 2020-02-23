@@ -35,10 +35,10 @@ if (isset($_GET['success'])) {
        
         <div class="form">
             <h2>Login for your grades, Student!</h2>
-            <form method="POST" action="sindex2.php">
+            <form method="post" action="sindex2.php">
             <input type="email" name="semail" placeholder="Email" required>
             <input type="text" name="spassword" placeholder="Password" required>
-            <input type="submit" value="Log In">
+            <input type="submit" value="Log In" name="submit">
             </form>
         </div>
     </div>

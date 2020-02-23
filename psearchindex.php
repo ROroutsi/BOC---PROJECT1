@@ -9,7 +9,7 @@ $_SESSION['onlyone']=$onlyone;
 if (!isset($_SESSION["plogin"])) {
 	   header("Location:plogin.php?error=pnotloggedin");
 	};
-if (isset($_POST['search'])) {
+if (isset($_POST['submit'])) {
 	$searchname = mysqli_real_escape_string($conn,$_POST['sname']);
 	$searchlastname = mysqli_real_escape_string($conn,$_POST['slastname']);
 	$searchmysql = "SELECT grades.`subjectone`, grades.`subjecttwo`, grades.`subjectthree`, grades.`subjectfour` FROM `students` JOIN `grades` ON grades.`student_id` = students.`id`  WHERE `sname` LIKE CONCAT('%',?,'%') AND `slastname` LIKE CONCAT('%',?,'%');";

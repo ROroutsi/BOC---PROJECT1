@@ -3,18 +3,17 @@
 require "connection.php";
 
 if (isset($_POST["submit"])) {
-
-$sname = mysqli_real_escape_string($conn, $_POST['sname']);
-$slastname = mysqli_real_escape_string($conn, $_POST['slastname']);
-$spassword= mysqli_real_escape_string($conn, $_POST['spassword']);
-$shpassword = password_hash($spassword, PASSWORD_DEFAULT);
-$srpassword= mysqli_real_escape_string($conn, $_POST['srpassword']);
-$semail = mysqli_real_escape_string($conn, $_POST['semail']);
-if ($spassword !== $srpassword) {
-	header("Location:ssignup.php?error=passwordnotmatching");
-	exit();	
+	$sname = mysqli_real_escape_string($conn, $_POST['sname']);
+	$slastname = mysqli_real_escape_string($conn, $_POST['slastname']);
+	$spassword= mysqli_real_escape_string($conn, $_POST['spassword']);
+	$shpassword = password_hash($spassword, PASSWORD_DEFAULT);
+	$srpassword= mysqli_real_escape_string($conn, $_POST['srpassword']);
+	$semail = mysqli_real_escape_string($conn, $_POST['semail']);
+	if ($spassword !== $srpassword) {
+		header("Location:ssignup.php?error=passwordnotmatching");
+		exit();	
 	}
-else {
+	else {
 		$same = "SELECT `semail` FROM `students` WHERE `semail` = ?;";
 		$stmt = mysqli_stmt_init($conn);
 		if (!mysqli_stmt_prepare($stmt,$same)) {
@@ -44,6 +43,9 @@ else {
 				}
 			}					
 		}
+	}	
 }
+else{
+	header("Location:ssignup.php")
 }
 ?>

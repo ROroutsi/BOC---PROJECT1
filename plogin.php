@@ -33,10 +33,10 @@ if (isset($_GET['success'])) {
        
         <div class="form">
             <h2>Login Professor!</h2>
-            <form method="POST" action="pindex2.php">
+            <form method="post" action="pindex2.php">
             <input type="email" name="pemail" placeholder="Email" required>
             <input type="text" name="ppassword" placeholder="Password" required>
-            <input type="submit" value="Log In">
+            <input type="submit" value="Log In" name="submit">
             </form>
         </div>
     </div>

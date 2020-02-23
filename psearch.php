@@ -29,10 +29,10 @@ if (isset($_GET['success'])) {
     <div class="container">
         <div class="form">
             <h2>Search Student!</h2>
-            <form method="POST" action="psearchindex.php">
+            <form method="post" action="psearchindex.php">
             <input type="text" name="sname" placeholder="Student Name" required>
             <input type="text" name="slastname" placeholder="Student Lastname" required>
-            <input type="submit" name="search" value="Search">
+            <input type="submit" name="submit" value="Search">
             </form>
         </div>
     </div>
