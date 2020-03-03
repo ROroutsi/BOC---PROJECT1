@@ -1,6 +1,8 @@
 # SoC - PROJECT1
 
-Professor and Student Signup/Login/Grades system.
+First bootcamp project based on PHP/MySQL. Built the backend on a simple given frontend.
+
+The project is a professor and student signup/login/grades system.
 
 **Begin with Start.php**
 
