@@ -6,7 +6,7 @@ The project is a professor and student signup/login/grades system.
 
 **Begin with Start.php**
 
-## Process
+## Succession
 
 1. project database + connection + require + Start
 
